@@ -1,19 +1,31 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import { View, Text, StyleSheet, AsyncStorage, ActivityIndicator } from 'react-native';
 
-class Highscores extends Component {
+class Highscores extends PureComponent {
 
     state = {
         scores: null
     }
 
-    async componentDidMount(){
+    componentDidMount(){
+       this.getScore();
+    }
+
+    componentDidUpdate(){
+        this.getScore();
+    }
+
+    async getScore(){
         let scores;
 
         await AsyncStorage.getItem('scores')
             .then(req => JSON.parse(req))
             .then(json => scores = json)
             .catch(err => console.log(err));
+
+        if(!scores){
+            scores = [];
+        }
 
         scores.sort((a,b) => a > b);
         scores = scores.slice(0, 10);

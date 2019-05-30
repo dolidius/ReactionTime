@@ -39,7 +39,7 @@ class ReactionTest extends Component {
             .then(json => scores = json)
             .catch(err => console.log(err));
 
-        if(scores === undefined){
+        if(!scores){
             scores = [];
         }
 
