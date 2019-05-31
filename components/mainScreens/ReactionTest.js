@@ -58,10 +58,7 @@ class ReactionTest extends Component {
                 isResultModalOpen: true
             });
             
-            const arr = [1,2,3,4];
-
             this.addToHighscore(time);
-
         }
 
         if(!this.state.isTouchable){
