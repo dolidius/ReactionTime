@@ -3,8 +3,8 @@
 ReactionTime is mobile app that allows user to check their time reaction. The score is saved in the highscore.
 
 
-![Menu](https://imgur.com/a/U6P5zoR)
-![Reaction checker](https://imgur.com/a/HTmG3e2)
+![Menu](https://i.imgur.com/E8qenN3.png)
+![Reaction checker](https://i.imgur.com/e9Zuwp0.png)
 
 ### Installation
 
