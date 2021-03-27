@@ -1,6 +1,6 @@
 # Reaction time
 
-ReactionTime is react native mobile app that allows user to check their time reaction. The score is saved in the highscore.
+ReactionTime is react native mobile app that allows user to check their time reaction. The score is saved in the highscore section.
 
 
 ![Menu](https://i.imgur.com/E8qenN3.png)
